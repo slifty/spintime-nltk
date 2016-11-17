@@ -11,5 +11,7 @@ grams = ngrams(transcript.split(), n)
 
 # Count how often each gram appears
 fdist = nltk.FreqDist(grams)
+
+# Output the 50 most frequent grams
 for k,v in fdist.most_common(50):
     print k,v
